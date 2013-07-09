@@ -1,0 +1,326 @@
+/*Reseting default browser styles*/
+*{margin:0;padding:0;border:0}
+
+.clearfix:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*End of reset*/
+
+/*Header styling*/
+img
+{
+	border-style:none;
+}
+
+header
+{
+	background : url('../images/HeaderPattern.png');
+	height : 200px;
+	margin:0;
+	padding:0;
+	text-align:center;
+	position : relative;
+	box-shadow : 0px 0px 15px #666666;
+	z-index:100;
+	border-bottom: 5px solid #e7b883;
+}
+
+header img
+{
+	display:inline;
+	margin-top:20px;
+}
+
+/*Navigation bar style*/
+
+nav 
+{
+	position:absolute;
+	text-align:center;
+	font-size: 19px;
+	bottom:0px;
+	width:100%;
+	padding:0;
+}
+#nav
+{
+	width:960px;
+	margin:auto;
+	list-style:none;
+	clear:both;
+}
+#nav li
+{
+	 margin-left:5px;
+}
+nav ul li 
+{
+	float:left;
+	position:relative;
+	/* border problem not figured out yet to check if stuck */
+}
+
+nav li  a
+{
+	 display:block;
+	 color:white;
+	 text-decoration:none;
+	 text-align:center;
+	 padding:6px 13px 5px 13px ;
+	 text-shadow: 1px 1px 4px #555555;
+	 border-color:#41768d;
+	 transition:background-color 0.5s, text-shadow 0.5s, border-left 0.5s ease-in-out;
+	 -webkit-transition:background-color 0.5s, text-shadow 0.5s, border-left 0.5s ease-in-out;
+	 -moz-transition:background-color 0.5s, text-shadow 0.5s, border-left 0.5s ease-in-out;
+	 -o-transition:background-color 0.5s, text-shadow 0.5s, border-left 0.5s ease-in-out;
+	 border-radius : 0px 5px 0px 0px;
+
+	 
+}
+nav ul li a:hover, .active
+{
+	background-color : #e7b883;
+	text-shadow: 1px 1px 7px #666;
+	border-left : 4px solid #41768d;
+}
+
+#nav li ul
+{
+	position:absolute;
+	top:100%;
+	left:-9999px;
+	list-style:none;
+	opacity:0;
+	 -ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
+    filter: alpha(opacity = 25); /* Hack IE 5-7 */
+    -webkit-transition: opacity 0.5s, border-left 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.5s, border-left 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.5s, border-left 0.5s ease-in-out;/* transition pour Opéra */
+    transition: opacity 0.5s, border-left 0.5s ease-in-out;
+	padding:5px 7px 7px 0;
+	border-radius: 0 0 5px 0px;
+	border-color:#41768d;
+
+}
+#nav ul a
+{
+	white-space:nowrap;
+}
+#nav li:hover ul
+{
+	left:0px;
+	background-color:#e7b883;
+	opacity:1;
+	border-left : 4px solid #41768d;
+}
+
+#nav li:hover > a
+{
+	background-color : #e7b883;
+	border-left : 4px solid #41768d;
+}
+
+
+#nav li ul a
+{
+	text-shadow:none;
+	margin:0 0 0 -7px;
+	padding:5px 5px 5px 10px;
+	border-radius:0;
+	border:0;
+	-webkit-transition: text-shadow 0.5s, padding 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: text-shadow 0.5s, padding 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: text-shadow 0.5s, padding 0.5s ease-in-out;/* transition pour Opéra */
+    transition: text-shadow 0.5s, padding 0.5s ease-in-out;
+}
+
+#nav li ul a:hover
+{
+	text-shadow:0px 0px 5px #41768d;
+	padding-left: 17px;
+	border:0;
+	background: url("../images/tiret.png") no-repeat left;
+}
+
+
+/*Orange fade : #e7b883*/
+
+
+/*End of Navigation bar style*/
+/*End of Header Styling*/
+
+
+/*Main content style*/
+body 
+{
+	background-image: url('../images/backgroundStripes.png');
+	font-family : "Times New Roman", Times, serif;
+}
+
+body p
+{
+	
+	font-size: 17px;
+	line-height:150%;
+}
+
+#Content
+{
+	width:960px;
+	margin:auto;
+	padding: 0 0px 50px 0px;
+	background-color:#d2d2d2;
+	box-shadow : 0px 0px 15px #666666;
+}
+
+aside
+{
+	width:24%;
+	float:right;
+}
+
+aside *
+{
+	margin: 9px;
+}
+
+aside h2
+{
+	color: #eee;
+	padding: 11px 11px 11px 20px; ;
+	background : url('../images/TitleBackgroundAside.png') no-repeat;
+	text-shadow: 1px 1px 3px #333333;
+	margin:8px;
+}
+
+aside p
+{
+	background-color: #bbbbbb;
+	border-radius : 0px 5px 0px 5px;
+	padding: 9px;
+}
+
+article
+{
+	float:left;
+}
+article p
+{
+	text-indent:30px;
+}
+
+.contentBlockBig
+{
+	width:100%;
+}
+
+.contentBlockSmall
+{
+	width:76%;
+}
+
+.contentBlockBig p,.contentBlockSmall p
+{
+	background-color: #bbbbbb;
+	border-radius : 0px 5px 0px 5px;
+	padding: 9px;
+}
+.contentBlockBig *, .contentBlockSmall *
+{
+	margin: 9px;
+}
+
+.contentBlockBig h2
+{
+	color: #eee;
+	padding: 11px ;
+	background : url('../images/TitleBackgroundBig.png') no-repeat;
+	background-size:100%;
+	text-shadow: 1px 1px 3px #333333;
+}
+
+.contentBlockSmall h2
+{
+	color: #eee;
+	padding: 11px ;
+	background : url('../images/TitleBackgroundSmall.png') no-repeat;
+	background-size:100%;
+	text-shadow: 1px 1px 3px #333333;
+}
+
+#sliderWrapper
+{
+	margin:0 0 30px 0;
+	width:100%;
+	z-index:1;
+}
+
+footer
+{
+	background: url('../images/micro_carbon.png');
+	border-top:5px solid #e7b883;
+	box-shadow : 0px 0px 30px #000 inset;
+	padding-bottom: 10px;
+}
+
+footer section
+{
+	width:960px;
+	margin:auto;
+}
+
+footer img {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+
+img:hover 
+{
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+footer h3
+{
+	font-family: Impact,Arial, sans-serif;
+	color:#d9d9d9;
+	margin:10px;
+	font-size:40px;
+	float:left;
+	background-color:#555555;
+	width:100%;
+	text-align:center;
+	line-height:0.1em;
+	margin:30px 0 50px 0;
+	opacity:0.5;
+	-webkit-transition: text-shadow 0.5s, opacity 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: text-shadow 0.5s, opacity 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: text-shadow 0.5s, opacity 0.5s ease-in-out;/* transition pour Opéra */
+    transition: text-shadow 0.5s, opacity 0.5s ease-in-out;
+	
+}
+
+footer h3:hover
+{
+	opacity:1;
+	text-shadow:0px 0px 5px #aaa;
+}
+
+footer h3 span
+{
+	padding:0 10px;
+	background: url('../images/micro_carbon.png');
+}
+
+footer ul li
+{
+	display:inline;
+	list-style:none;
+}
+/*End of Main content style*/
